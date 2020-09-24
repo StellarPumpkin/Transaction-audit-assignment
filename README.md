@@ -16,6 +16,17 @@ node build/Main.js
 
 POST request to `http://localhost:3000/` containing a single transaction from `transaction.txt`
 
+Example cURL request
+
+```
+curl -X POST \
+  http://localhost:3000/ \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: e4d5a9b2-f376-451a-9036-91b644a5b9ff' \
+  -d '{"id":1,"date":"2013-06-03T04:48:20+02:00","from":{"currency":"EUR","value":47.43},"to":{"currency":"USD","value":65.5236957156108}}'
+```
+
+
 ## Tests
 
 ```
